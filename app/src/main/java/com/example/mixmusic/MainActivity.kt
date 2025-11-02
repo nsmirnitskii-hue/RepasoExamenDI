@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.isSystemInDarkTheme
 import com.example.mixmusic.navigation.MainScreen
 import com.example.mixmusic.ui.theme.MiPortafolioDeProyectosTheme
 
@@ -12,7 +13,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            MiPortafolioDeProyectosTheme {
+            MiPortafolioDeProyectosTheme (
+                darkTheme = isSystemInDarkTheme(),
+                dynamicColor = false
+            ){
                 MainScreen()
                 }
             }
