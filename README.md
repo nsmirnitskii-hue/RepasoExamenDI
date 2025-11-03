@@ -1,4 +1,4 @@
-# 🎛️ Mesa de Mezclas — Jetpack Compose
+#  Mesa de Mezclas — Jetpack Compose
 
 **Mesa de Mezclas** es una aplicación móvil para mezclar canciones y efectos de sonido de manera interactiva, creada como proyecto de aprendizaje con **Jetpack Compose**.  
 Permite al usuario reproducir canciones fijas, cargar canciones desde el móvil, y mezclar varias pistas de audio simultáneamente.
@@ -27,15 +27,7 @@ Vuestra tarea es que la **interfaz gráfica** se parezca a las capturas de panta
 - Ventana para cargar canciones desde el movil.
 
 ---
-### Capturas de la app
 
-<img src="assetsDj/ventana1.jpg" alt="Vista principal" width="25%">
-
----
-
-<img src="assetsDj/ventana2.jpg" alt="Vista principal" width="25%">
-
----
 
 ## Estructura de proyecto
 
@@ -64,7 +56,7 @@ El proyecto consta de los siguientes paquetes: `navigation`, `screen` y `viewmod
   Ventana para seleccionar canciones desde el dispositivo móvil.  
   Incluye un botón “+” que abre el explorador de archivos para elegir un audio.
 
-- **GameViewModel.kt**  
+- **MusicViewModel.kt**  
   Se encarga de manejar la lógica de reproducción de las canciones, controlando:  
   - MediaPlayer por cada canción  
   - Estado de reproducción (Play/Pausa)  

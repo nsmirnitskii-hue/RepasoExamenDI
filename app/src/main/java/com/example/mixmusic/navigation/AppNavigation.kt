@@ -81,7 +81,7 @@ fun TopBar() {
         ),
         title = {
             Text(
-                "Dj",
+                "DI",
                 fontSize = 30.sp,
             )
         },
@@ -91,7 +91,7 @@ fun TopBar() {
 
             // Intent: enlace a Github
             IconButton(onClick = {
-                val url = "https://github.com/LucasCamarero?tab=repositories"
+                val url = "https://github.com/nsmirnitskii-hue/RepasoExamenDI"
                 val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
                 context.startActivity(intent)
             }) {
@@ -105,9 +105,9 @@ fun TopBar() {
 
             // Intent: enviar email
             IconButton(onClick = {
-                val recipient = "l.camareroperez@ikasle.eus"
-                val subject = "Prueba desde jet compose"
-                val body = "Hola Lucas del futuro. Esto es una prueba"
+                val recipient = "n.smirnitskii@ikasle.eus"
+                val subject = "Prueba desde Jetpack Compose"
+                val body = "Bienbenido, esto es un mensage de prueba"
                 val uri = ("mailto:$recipient"
                         + "?subject=${Uri.encode(subject)}"
                         + "&body=${Uri.encode(body)}").toUri()
